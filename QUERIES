@@ -1,0 +1,22 @@
+USER RESIGTRATION:
+
+INSERT INTO Users (Name, Email, Password, Phone) VALUES ('John Doe', 'john@example.com', 'password123', '9876543210');
+
+SEARCH AVAILABLE SERVICES:
+
+SELECT * FROM Services WHERE ServiceType = 'Movie' AND AvailableSlots > 0;
+
+BOOK A TICKET;
+
+INSERT INTO Tickets (UserID, ServiceID, BookingDate, SeatNumber, Price, Status) 
+VALUES (1, 5, '2024-10-20', 'A12', 500, 'Booked');
+
+CANCEL A TICKET:
+
+UPDATE Tickets SET Status = 'Cancelled' WHERE TicketID = 3;
+
+PAYMENT:
+
+INSERT INTO Payments (TicketID, Amount, PaymentDate, PaymentMode) VALUES (3, 500, '2024-10-20', 'Credit Card');
+
+
