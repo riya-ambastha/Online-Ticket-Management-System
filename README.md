@@ -22,7 +22,7 @@ The following tables can be used to manage the data:
 Users:
 
 UserID (Primary Key)
-Name
+Name 
 Email
 Password
 Phone
